@@ -1,7 +1,9 @@
 import smtplib
 import os
+from dotenv import load_dotenv
 
 
+load_dotenv()
 host = 'smtp.yandex.ru:465'
 sender_email = os.environ['SENDER_EMAIL']
 recipient_email = os.environ['RECIPIENT_EMAIL']
